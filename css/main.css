@@ -8,6 +8,8 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+    
+    background-color: #ccc;
 
   font: normal 100%/1.5 sans-serif;
   -moz-text-size-adjust: 100%;
@@ -23,26 +25,40 @@ html {
 body {
   margin: 0;
   padding: 0;
+    background-color: #fff;
 }
 
 img {
   display: block;
   width: 100%;
 }
-
-figure {
-    margin: 0;
-    padding: 0;
+ 
+.graphic {
+    margin:0;
+    position: relative;
 }
 
-figcaption {
+.graphic-caption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3); 
+    color: white;
     font-family: serif;
-    padding: 1rem;
     font-size: .9rem;
 }
 
-h1 {
+.info {
+    float: left;
     padding: 1rem;
+    width: 33.3333%;
+    border-right: 1px solid #ccc;
+}
+
+.info:last-child {
+    border:0;
+}
+
+h1 {
     font-size: 1rem;
 }
 
@@ -50,12 +66,10 @@ h2 {
     color: gray;
     font-size: .8rem;
     text-transform: uppercase;
-    padding-left: 1rem;
 }
 
 p {
     font-size: 1rem;
-    padding-left:1rem;
 }
     
     
